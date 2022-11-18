@@ -29,8 +29,8 @@ const AvatarHome = () => {
                     <div className="r1 row">
                         <div className="AvatarCard-container">
                             {/* Displaying data from MongoDB */}
-                            {data?.map((mv) => (
-                                <div className="Avatar card" key={mv.id}>
+                            {data?.map((mv, id) => (
+                                <div className="Avatar card" key={id}>
                                     <img className="Avatarimg card-img-top" src={mv?.poster} alt="movie-poster" />
                                     <h3 className='Avatart card-title'>{mv.title}</h3>
                                     <h6 className='Avatardesc'>{mv.description}</h6>
