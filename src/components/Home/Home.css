@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.Home-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333;
+
+}
+
+.Greeting {
+    color: white;
+}
+
+.Homecard {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background: #333;
+    transition: 0.5s;
+}
+
+/* .Homecard :active {
+    height: 100%;
+    width: 100%;
+} */
+
+.Lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.Lines::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,
+            #45f3ff,
+            #45f3ff,
+            #45f3ff, transparent);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+.Lines::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-color: #292929;
+}
+
+
+.Content {
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 165px;
+    height: 35px;
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.Content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent,
+            #ff3c7b,
+            #ff3c7b,
+            #ff3c7b, transparent);
+    animation: animate2 6s linear infinite;
+}
+
+.Content::after {
+    content: '';
+    position: absolute;
+    background: #292929;
+    inset: 3px;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+.Pandora-link {
+    display: flex;
+    flex-direction: row;
+    color: #08cfdd;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+}
+
+.Pandora-link:active {
+    color: #ff3c7b;
+}
