@@ -1,46 +1,78 @@
-# Getting Started with Create React App and Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# User Auth Demo for Multiple OAuth with Firebase
 
-## Available Scripts
+This repository provides a user authentication system for various social media applications like Google, Facebook, and GitHub using Firebase. It also includes a "Forgot Password" feature that allows users to reset their passwords via email. Additionally, the app allows new users to register and existing users to log in without using any social media providers.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Sign in with Google: Users can sign in to the app using their Google accounts.
+- Sign in with Facebook: Users can sign in to the app using their Facebook accounts.
+- Sign in with GitHub: Users can sign in to the app using their GitHub accounts.
+- Email and password authentication: Users can register and log in using their email addresses and passwords.
+- Forgot Password: Users can reset their passwords by providing their email address and following the instructions in the password reset email.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```shell
+   git clone https://github.com/ashvinck/capstone-frontend.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+   ```shell
+   cd capstone-frontend
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```shell
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Configure Firebase:
 
-### `npm run eject`
+   - Create a new Firebase project at [https://console.firebase.google.com](https://console.firebase.google.com) and obtain your Firebase configuration settings.
+   - Replace the Firebase configuration settings in the `src/firebase/firebaseConfig.js` file with your own.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```shell
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Sign in with social media providers:
+   - Click on the respective social media buttons (Google, Facebook, or GitHub) on the login page.
+   - If you haven't already signed in to the selected social media provider, you will be redirected to its login page.
+   - After successful authentication, you will be redirected back to the app and logged in.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Register and log in without social media providers:
+   - Click on the "Sign Up" link on the login page.
+   - Fill in the required information (email and password) in the registration form.
+   - Click on the "Sign Up" button to create a new account and log in.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Forgot Password:
+   - Click on the "Forgot Password?" link on the login page.
+   - Enter your email address in the provided field.
+   - Click on the "Reset Password" button.
+   - Check your email inbox for a password reset email.
+   - Follow the instructions in the email to reset your password.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Credits
+
+This project was created by [ASHVIN C K](https://github.com/ashvinck). I would also like to express my sincere gratitude to all the open-source contributers for their contribution without them  various functionalities used in this app wouldn't have been made possible.
+
+---
