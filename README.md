@@ -75,4 +75,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 This project was created by [ASHVIN C K](https://github.com/ashvinck). I would also like to express my sincere gratitude to all the open-source contributers for their contribution without them  various functionalities used in this app wouldn't have been made possible.
 
+
+## Demo
+
+![Home](Demo/capstone.png)
+![Dashboard](<Demo/capstone xl.png>)
 ---

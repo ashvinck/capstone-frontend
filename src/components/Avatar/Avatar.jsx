@@ -36,7 +36,7 @@ const AvatarHome = () => {
                                     <h6 className='Avatardesc'>{mv.description}</h6>
                                     <h6 >{mv.releasedate}</h6>
                                     <h6>{mv.budget}</h6>
-                                    {console.log(mv.poster)}
+                                    {/* {console.log(mv.poster)} */}
                                 </div>
                             ))}
                         </div>
